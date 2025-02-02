@@ -88,7 +88,7 @@ button {
 /* Imagen de ustedes dos */
 #photo {
     width: 250px; /* Ajusta el tamaño de la imagen */
-    max-width: 30%; /* Evita que se desborde en pantallas pequeñas */
+    max-width: 60%; /* Evita que se desborde en pantallas pequeñas */
     margin-top: 20px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
