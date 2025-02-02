@@ -1,3 +1,4 @@
+/* Fondo morado con degradado */
 body {
     font-family: 'Arial', sans-serif;
     text-align: center;
@@ -10,6 +11,7 @@ body {
     margin: 0;
 }
 
+/* Contenedor principal */
 .container {
     background: rgba(255, 255, 255, 0.2);
     padding: 30px;
@@ -18,20 +20,24 @@ body {
     animation: fadeIn 1s ease-in-out;
 }
 
+/* Animación de aparición */
 @keyframes fadeIn {
     from { opacity: 0; transform: scale(0.9); }
     to { opacity: 1; transform: scale(1); }
 }
 
+/* Título */
 h1 {
     font-size: 28px;
 }
 
+/* Imagen de corazones */
 .hearts {
     width: 120px;
     margin: 10px 0;
 }
 
+/* Botones */
 .buttons {
     margin-top: 20px;
     position: relative;
@@ -47,6 +53,7 @@ button {
     transition: 0.3s, transform 0.2s ease-in-out;
 }
 
+/* Botón "Sí" */
 #yesBtn {
     background-color: #ff4b5c;
     color: white;
@@ -57,12 +64,14 @@ button {
     transform: scale(1.1);
 }
 
+/* Botón "No" que se mueve */
 #noBtn {
     background-color: #999;
     color: white;
     position: absolute;
 }
 
+/* Mensaje de respuesta */
 #message {
     font-size: 22px;
     font-weight: bold;
@@ -70,10 +79,23 @@ button {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
+
+/* Imagen oculta inicialmente */
 .hidden {
     display: none;
-    width: 250px;
+}
+
+/* Imagen de ustedes dos */
+#photo {
+    width: 250px; /* Ajusta el tamaño de la imagen */
+    max-width: 90%; /* Evita que se desborde en pantallas pequeñas */
     margin-top: 20px;
     border-radius: 15px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Pequeño efecto al pasar el mouse por la imagen */
+#photo:hover {
+    transform: scale(1.1);
 }
