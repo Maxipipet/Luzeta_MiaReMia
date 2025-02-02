@@ -1,6 +1,7 @@
 const noBtn = document.getElementById("noBtn");
 const yesBtn = document.getElementById("yesBtn");
 const message = document.getElementById("message");
+const photo = document.getElementById("photo");
 
 noBtn.addEventListener("mouseover", () => {
     const x = Math.random() * (window.innerWidth - 100);
@@ -10,6 +11,7 @@ noBtn.addEventListener("mouseover", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-    message.textContent = "💖 ¡Sabía que dirías que sí (sino paqui enojado)! 💖";
+    message.textContent = "💜 ¡Sabía que dirías que sí! 💜";
     message.style.opacity = "1";
+    photo.classList.remove("hidden"); // Muestra la foto
 });
