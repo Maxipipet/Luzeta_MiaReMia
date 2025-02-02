@@ -11,7 +11,7 @@ noBtn.addEventListener("mouseover", () => {
 });
 
 yesBtn.addEventListener("click", () => {
-    message.textContent = "💜 ¡Sabía que dirías que sí! 💜";
+    message.textContent = "💜 Ya no solo sos mi 19, si no tambien mi 14 💜";
     message.style.opacity = "1";
     photo.classList.remove("hidden"); // Muestra la foto
 });
